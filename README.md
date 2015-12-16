@@ -31,13 +31,15 @@ require("file?name=[name].html!jade-html!./file.jade");
 
 Possible options are (all passed to jade.compile()):
 
-* self   - set the context;
+* `self`   - set the context;
 
-* pretty - boolean, output pretty html or not;
+* `pretty` - boolean, output pretty html or not;
 
-* locals - set locals;
+* `locals` - set locals;
 
-* single - set this option if you want the loader without file-loader.
+* `single` - set this option if you want the loader without file-loader;
+
+* `data`   - set values passed into the render function.
 
 Don't forget to polyfill `require` if you want to use it in node.
 See [enhanced-require](https://github.com/webpack/enhanced-require) documentation.

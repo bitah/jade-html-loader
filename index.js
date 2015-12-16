@@ -21,7 +21,7 @@ module.exports = function(source) {
 		compileDebug: this.debug || false
 	});
 
-	var html = tmplFunc(query);
+	var html = tmplFunc(query.data);
 
-	return query.single ? "module.exports =" + JSON.stringify(html) + ";" : html;
+	return query.single ? "module.exports=" + JSON.stringify(html) + ";" : html;
 };
